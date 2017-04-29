@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CutConvert</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700i" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link href="css/select2.css" rel="stylesheet" type="text/css">
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <div class="col-xs-12">
+            <div class="logo_text">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="CutConvert">
+                    <h1>Animation</h1>
+                </a>
+            </div>
+           <!-- <select class="language" id="language"  data-placeholder="Language">
+
+                <option></option>
+                <option value="En" class="hvr-sweep-to-bottom">English</option>
+                <option value="Fr" class="hvr-sweep-to-bottom" >French</option>
+                <option value="Fr" class="hvr-sweep-to-bottom" >French</option>
+                <option value="Fr" class="hvr-sweep-to-bottom" >French</option>
+
+            </select>-->
+            <select class="cs-select cs-skin-underline language">
+                <option value="" disabled selected>Language</option>
+                <option value="1"  >English</option>
+                <option value="2"  >French</option>
+                <option value="1"  >English</option>
+                <option value="2"  >French</option>
+            </select>
+        </div>
+    </div>
+
+
+
+    <nav>
+        <div class="hamburger_menu">
+        <div id="nav-icon1" >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+    </div>
+        <ul class="nav navbar-nav menu_convert">
+
+            <li><a href="#">Detect</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Audio</a></li>
+            <li><a href="#">Image</a></li>
+            <li><a href="#">Doc & PDF</a></li>
+
+        </ul>
+    </nav>
+</header>
+<section class="full_screen">
+    <section class="main_section ">
+        <div class="aside_upload ">
+            <div class="add_file ">
+                <img src="images/add_b.png" atl="Upload file to convert">
+                <p class="animated ">Upload file to convert</p>
+            </div>
+            <div class="add_link">
+                <img src="images/add_link.png" atl="Paste URL link here">
+                <p class="animated ">Paste URL link here</p>
+            </div>
+            <p class="text_convert">
+                Cut and convert to other formats by selecting a file from your device or by pasting a link.
+            </p>
+            <div class="upload_file">
+                <img class="animated " src="images/logo2.png" atl="Upload file to convert">
+
+            </div>
+            <div class="upload_file_choose">
+                <div class="load_img">
+                    <img src="images/load_img.jpg " alt="load file">
+                    <img id="upload_file_c" class="close_btn animated" src="images/close.png" alt="close button">
+
+                </div>
+                <div class="select_sound_video">
+                    <form action="#">
+                        <p>
+                            <input type="checkbox" id="mp3" checked="checked"/>
+                            <label for="mp3">MP3 Sound</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="hq"/>
+                            <label for="hq">HQ Video</label>
+                        </p>
+
+                    </form>
+                </div>
+                <div class="cut_sound_video">
+                    <form action="#">
+
+                        <input type="checkbox" id="cut_v"/>
+                        <label for="cut_v">Cut</label>
+                        <div class="sound_video">
+                            <span> from</span>
+                            <input id="timeStart" type="time" step="1" placeholder="00:00:00"/></div>
+                        <div class="sound_video">
+                            <span class="to"> To</span>
+                            <input id="timeEnd" type="time" step="1" placeholder="00:00:00"/></div>
+
+
+                    </form>
+                </div>
+
+                <div class="quality_load_file">
+                    <form action="#">
+                        <p>
+                            <input type="checkbox" id="128k"/>
+                            <label for="128k">128 kbps</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="192k" checked="checked"/>
+                            <label for="192k">192 kbps</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="320k"/>
+                            <label for="320k">320 kbps</label>
+                        </p>
+
+
+                    </form>
+                </div>
+                <div class="download_button">
+                    <button ><img class="animated" src="images/download_white.png"
+                                                  alt="CutConvert"><span>Cut & Convert</span></button>
+                </div>
+
+            </div>
+            <div class="upload_link_choose">
+                <div class="load_img">
+                    <img src="images/load_img.jpg " alt="load file">
+                    <img id="back_to_main_load" class="close_btn animated" src="images/close.png" alt="close button">
+
+                </div>
+                <div class="select_sound_video">
+                    <form action="#">
+                        <p>
+                            <input type="checkbox" id="mp3L" checked="checked"/>
+                            <label for="mp3L">MP3 Sound</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="hqL"/>
+                            <label for="hqL">HQ Video</label>
+                        </p>
+
+                    </form>
+                </div>
+                <div class="cut_sound_video">
+                    <form action="#">
+
+                        <input type="checkbox" id="cut_vL"/>
+                        <label for="cut_vL">Cut</label>
+                        <div class="sound_video">
+                            <span> from</span>
+                            <input id="timeStartL" type="time" step="1" placeholder="00:00:00"/></div>
+                        <div class="sound_video">
+                            <span class="to"> To</span>
+                            <input id="timeEndL" type="time" step="1" placeholder="00:00:00"/></div>
+
+
+                    </form>
+                </div>
+
+                <div class="quality_load_link">
+                    <span>Quality</span>
+                    <select id="quality_link" data-placeholder="Choose quality">
+                        <option value=""></option>
+                        <option value="">mp4(1280x720)</option>
+                        <option value="">mp4(1280x720)</option>
+                        <option value="">mp4(1280x720)</option>
+
+                    </select>
+                </div>
+                <div class="download_button" id="down_but_load_link">
+                    <button ><img class="animated" src="images/download_white.png"
+                                                  alt="CutConvert"><span>Cut & Convert</span></button>
+                </div>
+
+            </div>
+            <div class="getting_file">
+                <p>Getting file...</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar"
+                         aria-valuemin="0" aria-valuemax="100">
+                        <span class="sr-only">70% Complete</span>
+                    </div>
+                </div>
+                <img id="get_file_load" class="close_btn animated" src="images/close.png" alt="close button">
+            </div>
+            <div class="getting_file1">
+                <p>Getting file...</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar"
+                         aria-valuemin="0" aria-valuemax="100">
+
+                    </div>
+                </div>
+                <img id="get_link_load" class="close_btn animated" src="images/close.png" alt="close button">
+            </div>
+            <div class="complite_file">
+                <p>File conversion complete.</p>
+
+                <img id="back_to_prog" class="close_btn animated" src="images/close.png" alt="close button">
+                <div class="download_button">
+                    <button class="animated">
+                        <img class="animated" src="images/download_white.png" alt="CutConvert">
+                        <span>Download</span>
+                    </button>
+                </div>
+            </div>
+            <div class="complite_file1">
+                <p>File conversion complete.</p>
+
+                <img id="complite_link_back" class="close_btn animated" src="images/close.png" alt="close button">
+                <div class="download_button">
+                    <button >
+                        <img class="animated" src="images/download_white.png"  alt="CutConvert">
+                        <span >Download</span>
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <section class="baner">
+        <div></div>
+
+    </section>
+
+</section>
+
+
+<footer>
+    <div class="footer_text">
+        <img src="images/footer.png" alt="CutConvert">
+        <p>Animation and text</p>
+    </div>
+
+</footer>
+<div class="preloader1" >
+    <div>
+        <img class="animated" src="images/preloader.png"></div>
+</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/select2.min.js"></script>
+
+<script src="js/animate.js"></script>
+
+<script>
+
+</script>
+
+</html>
